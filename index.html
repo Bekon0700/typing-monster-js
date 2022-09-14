@@ -9,12 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500&display=swap"
+    rel="stylesheet"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <h1 class="title"><img src="./logo.png" /></h1>
+    <h1 class="title flex justify-center"><img src="./logo.png" /></h1>
     <div id="show-time">0 seconds</div>
 
     <div class="box-container">
@@ -23,7 +24,7 @@
       <div id="display" class="inactive"></div>
 
       <div class="buttons">
-        <button id="starts">START</button>
+        <button id="starts" class="text-white">START</button>
       </div>
 
       <div class="divider-container">
@@ -31,7 +32,7 @@
         <h1 class="title2">History</h1>
         <div class="line"></div>
       </div>
-      <div id="histories"></div>
+      <div id="histories" class="grid grid-cols-1 md:grid-cols-3 gap-4"></div>
     </div>
 
     <div id="countdown"></div>
